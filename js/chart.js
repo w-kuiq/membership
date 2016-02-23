@@ -2,29 +2,30 @@ function lineChart() {
         var ctx = document.getElementById('myChart').getContext("2d")
         var data = {
 
-            labels: ["2014-10", "2014-11", "2014-12", "2015-1", "2015-2", "2015-3"],
+            labels: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
 
             datasets: [{
 
                 label: "",
+                // 填充颜色
+                fillColor: "rgba(140,216,229,0.2)",
+                // 线的颜色
+                strokeColor: "rgba(151,187,205,1",
+                // 点的填充颜色
+                pointColor: "rgba(151,187,205,1)",
+                // 点的边线颜色
+                pointStrokeColor: "#fff",
 
-                fillColor: "rgba(220,220,220,0.2)",
-
-                strokeColor: "rgba(0,102,51,1)",
-
-                pointColor: "rgba(220,220,220,1)",
-
-                pointStrokeColor: "#339933",
-
-                pointHighlightFill: "#339933",
+                pointHighlightFill: "#fff",
 
                 pointHighlightStroke: "rgba(220,220,220,1)",
 
-                data: [1.27, 1.30, 1.30, 1.41, 1.04, 1.29]
+                data: [10000,30000, 80000, 40000,10000,100000,80000, 40000,10000,50000]
 
             }]
 
         };
+
 
         // var salesVolumeChart = new Chart(ctx).Line(data);
 
@@ -50,19 +51,20 @@ function lineChart() {
 
             // 点击的小提示
 
-            tooltipTemplate: "<%if (label){%><%=label%> 销量：<%}%><%= value %>万辆",
+            tooltipTemplate: "<%if (label){%><%=label%>入账金额：<%}%><%= value %>元",
 
             //自定义背景小方格、y轴每个格子的单位、起始坐标
 
             scaleOverride: true,
 
-            scaleSteps: 9.5,
+            scaleSteps: 6.5,
+
 
             // scaleStepWidth: Math.ceil(Math.max.apply(null,data.datasets[0].data) / 0.1),
 
-            scaleStepWidth: 0.05,
+            scaleStepWidth: 20000,
 
-            scaleStartValue: 1
+            scaleStartValue: 0
 
         });
 
@@ -74,7 +76,7 @@ function lineChart() {
 
         var data = {
 
-            labels: ["2014-10", "2014-11", "2014-12", "2015-1", "2015-2", "2015-3"],
+            labels: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
 
             datasets: [{
 
@@ -92,7 +94,7 @@ function lineChart() {
 
                 pointHighlightStroke: "rgba(220,220,220,1)",
 
-                data: [1.27, 1.30, 1.30, 1.41, 1.04, 1.29]
+                data: [10000,30000, 80000, 40000,10000,100000,120000, 40000,10000,50000,20000,10000]
 
             }]
 
@@ -102,8 +104,8 @@ function lineChart() {
 
             // 点击的小提示
 
-            tooltipTemplate: "<%if (label){%><%=label%> 销量：<%}%><%= value %>万辆"
-
+            tooltipTemplate: "<%if (label){%><%=label%> 提现金额：<%}%><%= value %>元",
+           
         });
 
     }

@@ -1,9 +1,10 @@
-a{
+span, a, h1, h2, h3, h4 , h5, h6{
 	font-family:  "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti, "Microsoft YaHei";
 }
 body{
-    background-color:  #eaedf1;
+	background-color:  #eaedf1;
 }
+
 .topbar{
 	width: 100%;
 	height: 50px;
@@ -144,11 +145,18 @@ body{
 }
 
 /*-----------------------------------------sidebar-------------------------*/
+.main-contain{
+	margin-top: 65px;
+	float: left;
+	width: 100%;
+	background-color:  #eaedf1;
+}
 .sidebar{
     margin-top: 50px;
 	width: 250px;
 	position: fixed;
 	top:0;
+
 }
 .sidebar-nav{
 	width: 180px;
@@ -219,6 +227,11 @@ ul.mainmenu li.menu1.open span{
 
 
 /*content*/
+.content{
+	margin-left: 180px;
+	padding-left: 15px;
+}
+
 .sidebar-fix{
      min-height: 500px;
      height: 100%;
@@ -227,14 +240,96 @@ ul.mainmenu li.menu1.open span{
 }
 
 .user-container{
-	margin-left: 116px;	
+	min-width: 1160px;
 }
 .user-section-wrap{
 	width: 33.3%;
-float: left;
+    float: left;
 }
 .user-section{
-	background: #ddf;
-height: 140px;
-margin-right: 16px;
+	background-color: #fff;
+    height: 130px;
+    margin-right: 15px;
+}
+.section-head{
+	width: 80px;
+	height: 100%;
+	float: left;
+	height: 140px;
+	line-height: 140px;
+	padding-left:  10px;
+}
+.section-content-wrap{
+	padding-left: 80px;
+	width: 100%;
+	height: 100%;
+}
+.section-content{
+	padding: 30px 0px 20px 20px;
+    font-size: 12px;
+}
+.section-content .user-name span{
+    color: #d7d7d7;
+}
+.section-content .user-name a{
+	display: inline-block;
+	width: 100px;
+	vertical-align: bottom;
+	overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.section-content .user-intro{
+	color:#6e6e6e;
+}
+.user-icon span{
+	color: #d7d7d7;
+	margin-right: 5px;
+}
+.user-money a{
+	color: #f7c260;
+}
+.mb3{
+	margin-bottom: 3px;
+}
+.chart-container{
+	min-width: 1160px;
+}
+.chart-wrap{
+	width: 50%;
+	float: left;
+}
+
+
+.canvas-chart{
+	margin-top: 15px;
+	background-color: #fff;
+	padding:10px 20px;
+	margin-right: 15px;
+}
+.notice-container{
+	min-width: 1160px;
+}
+.notice-wrap{
+	width: 100%;
+    float: left;
+}
+.notice-section{
+	margin-top: 15px;
+	background-color: #fcfae1;
+	margin-right: 15px;
+}
+.notice-content{
+	border-left: 6px;
+	border-left-color: #ad7638;
+	border-left-style: solid;
+	padding-left: 10px;
+	font-size: 12px;
+}
+.notice-content span{
+    color: #ad7638;
+    background-color: #fcfae1;
+}
+.footing{
+    min-width: 1160px;
 }

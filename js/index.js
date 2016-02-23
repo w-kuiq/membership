@@ -27,14 +27,21 @@ $(function () {
 	var $sideFold = $('.sidebar-fold');
 	var $sideNav  =$('.sidebar-nav');
 	var $sideFix = $('.sidebar-fix');
+	var $content = $('.content')
 	$sideFold.click(function () {
 		if ($sideNav.width()>50) {
 			$sideNav.animate({width:'50px'},200);
 			$sideFix.animate({width:'50px'},200);
+			$content.animate({
+				marginLeft:'50px'
+			},200);
 			$(this).find('span').replaceWith('<span class="icon-align-center"></span>');
 		}else{
 			$sideNav.animate({width:'180px'},200);
 			$sideFix.animate({width:'180px'},200);
+			$content.animate({
+				marginLeft:'180px'
+			},200);
 			$(this).find('span').replaceWith('<span class="icon-align-justify"></span>');
 		}                                                               
 	});
