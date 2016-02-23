@@ -1,5 +1,8 @@
-span, a, h1, h2, h3, h4 , h5, h6{
+span, a, h1, h2, h3, h4 , h5, h6,table {
 	font-family:  "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti, "Microsoft YaHei";
+}
+a:focus{
+	outline:0; 
 }
 body{
 	background-color:  #eaedf1;
@@ -226,7 +229,7 @@ ul.mainmenu li.menu1.open span{
 }
 
 
-/*content*/
+/*--------------------------------content-----------------------*/
 .content{
 	margin-left: 180px;
 	padding-left: 15px;
@@ -333,3 +336,5 @@ ul.mainmenu li.menu1.open span{
 .footing{
     min-width: 1160px;
 }
+
+/*-----------------------------member-manage.html-----------------------*/

@@ -108,7 +108,12 @@ function lineChart() {
            
         });
 
-    }
+    };
+
+
+
+
+    
 
     // 启动
 
@@ -119,6 +124,7 @@ function lineChart() {
         lineChart()
 
         barChart()
+        doughChart()
 
     }, 0)
 
@@ -134,4 +140,61 @@ function lineChart() {
 
         Chart.defaults.global.animationEasing = "linear"
 
-    }
+    };
+
+
+    // 成员管理 环形图
+    function doughChart1() {
+         var ctx = new Chart(document.getElementById("doughChart1").getContext("2d"));
+         var options = {
+             scaleFontSize: 13,
+             scaleFontColor: "#ffa45e"
+         };
+         var doughnutChart = [{
+             value: 4,
+             color: "#38cccb"
+         }, {
+             value: 16,
+             color: "#eee"
+        
+         }];
+         var myRingChart = ctx.Doughnut(doughnutChart);
+    };
+    function doughChart2() {
+         var ctx = new Chart(document.getElementById("doughChart2").getContext("2d"));
+         var options = {
+             scaleFontSize: 13,
+             scaleFontColor: "#ffa45e"
+         };
+         var doughnutChart = [{
+             value: 4,
+             color: "#38cccb"
+         }, {
+             value: 16,
+             color: "#eee"
+        
+         }];
+         var myRingChart = ctx.Doughnut(doughnutChart);
+    };
+    function doughChart3() {
+         var ctx = new Chart(document.getElementById("doughChart3").getContext("2d"));
+         var options = {
+             scaleFontSize: 13,
+             scaleFontColor: "#ffa45e"
+         };
+         var doughnutChart = [{
+             value: 4,
+             color: "#38cccb"
+         }, {
+             value: 16,
+             color: "#eee"
+        
+         }];
+         var myRingChart = ctx.Doughnut(doughnutChart);
+    };
+    doughChart1();
+    doughChart2();
+    doughChart3();
+   
+
+   
