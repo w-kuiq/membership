@@ -1,0 +1,18 @@
+.manage-container{
+	min-width: 1160px;
+}
+.manage-section-wrap{
+	width: 33.3%;
+    float: left;
+}
+.manage-section{
+	background-color: #fff;
+    height: 200px;
+    margin-right: 15px;
+}
+.manage-head{
+	width: 180px;
+	height: 180px;
+	padding-top:10px;
+
+}
