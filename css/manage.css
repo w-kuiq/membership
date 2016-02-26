@@ -1,26 +1,26 @@
 .manage-container{
-	min-width: 1160px;
+	min-width: 1135px;
 }
 .manage-section-wrap{
 	width: 33.3%;
     float: left;
 }
+.manage-section-wrap2{
+    width: 50%;
+    float: left;
+}
 .manage-section{
 	background-color: #fff;
-    height: 200px;
+    height: 160px;
     margin-right: 15px;
 }
 .manage-head{
 	width: 160px;
 	height: 100%;
 	float: left;
-	height: 200px;
-	line-height: 200px;
-	padding:  30px;
+	padding:  30px 40px;
 }
-.manage-content{
 
-}
 .manage-content a:hover{
 	text-decoration: none;
 }
@@ -38,10 +38,33 @@
 	margin-top: 15px;
 	font-size: 22px;
 }
+.section-fold{
+	float: right;
+	margin-right: 40px;
+}
+.section-fold a:hover{
+	cursor: pointer;
+}
+.section-fold a{
+	display: inline-block;
 
-
+	text-decoration: none;
+	transition: transform 0.2s, vertical-align 0.2s;
+    -o-transition: transform 0.2s, vertical-align 0.2s;
+    -ms-transition: transform 0.2s, vertical-align 0.2s;
+    -moz-transition: transform 0.2s, vertical-align 0.2s;
+    -webkit-transition: transform 0.2s, vertical-align 0.2s;
+}
+.section-fold.open a{
+	display: inline-block;
+	  transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
 .manage-container{
-	min-width: 1160px;
+	min-width: 1135px;
 }
 .manage-table-wrap{
 	width: 100%;
@@ -61,4 +84,126 @@
 }
 .manage-table tr{
 	background-color: #fff;
+}
+
+
+table.manage-table{
+	width: 100%;
+}
+tr.parent{
+	background-color: #D8D8D8;
+}
+tr.child{
+	background-color: #bbb;
+}
+
+table.dataTable tbody tr.parent{
+	background-color: #887E7E;
+}
+table tr td a.a{
+	margin-right: 15px;
+
+}
+
+table tr td a.a2{
+	padding-left: 30px;
+}
+table tr td a.a3{
+	padding-left: 100px;
+}
+
+
+tr.selected{
+	background-color: red;
+}
+
+
+/*-----------------------------------------manage2.html-------------------------------*/
+.content-head{
+	margin-bottom: 15px;
+	border-left: 3px solid #4e82bc;
+	padding-left: 10px;
+
+}
+.manage-name a{
+    color: #f3b012;
+    float: right;
+    height: 24px;
+    line-height: 24px;
+    text-decoration: none;
+    font-size: 26px;
+    margin-right: 40px;
+    letter-spacing: 2px;
+}
+.manage-name2 a {
+	float: right;
+	margin-right: 40px;
+}
+.manage-name a span{
+	color: #333;
+	font-size: 20px;
+}
+.manage-intro span{
+	color: #bdbdbd;
+}
+table.table{
+	text-align: center;
+}
+
+.dataTables_filter input{
+	border:1px solid #ddd;
+	padding-left: 5px;
+	height: 25px;
+	line-height: 25px;
+}
+/*table.dataTable thead th, table.dataTable thead td,table.dataTable.no-footer{
+	border-bottom: 0;
+}*/
+
+
+
+
+/*---------------------------------------widthdraw--------------------------------*/
+.manage-section-draw-wrap{
+	width: 100%;
+	float: left;
+}
+.manage-draw, .manage-manage2{
+	background-color: #fff;
+	margin-right: 15px;
+	padding:15px;
+}
+.manage-manage2{
+	margin-top: 15px;
+}
+.draw-head{
+	margin-bottom:15px;
+}
+.draw-head p{
+	padding:20px;
+}
+.draw-head span {
+	font-size: 16px;
+}
+.draw-head span a{
+	color: #F3B012;
+	font-size: 22px;
+}
+.draw-warn{
+	background-color: #f9f9f9;
+	padding:10px;
+	color: #bcbcbc;
+	margin-top: 15px;
+}
+.draw-warn strong{
+	color: #f25652;
+}
+table.table2{
+	margin-top: 15px;
+}
+/*----------------------------------public.html---------------------------*/
+.manage-public {
+	border-top:1px solid #d8d8d8;
+	padding:15px;
+	margin-right: 15px;
 }

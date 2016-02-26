@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="css/jquery.dataTables.min.css">  
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
+
     <link rel="stylesheet" href="css/index.css">
 
     <link rel="stylesheet" href="css/manage.css">
@@ -84,114 +84,102 @@
         <div class="sidebar-fix"></div>
         <!-- <div class="clearfix"></div> -->
         <div class="content">
-            <div class="manage-container">
-                <div class="manage-section-wrap">
-                    <div class="manage-section">
-                        <div class="manage-head">
-                            <canvas id="doughChart1" width="120" height="120"></canvas>
-                        </div>
-                        <div class="manage-content">
-                            <div class="h">
-                                <a href="#">一级会员</a><a onclick="asd();">二级</a>
-                            </div>
-                            <div class="title">
-                                <span>当前</span>
-                            </div>
-                             <div class="title">
-                                <span>共计</span>
-                            </div>
-                            <div class="num">
-                                <a href="#">5人</a>
-                            </div>
-                            <div class="num">
-                                <a href="#">20人</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- manage-section-wrap -->
-                <div class="manage-section-wrap">
-                    <div class="manage-section">
-                        <div class="manage-head">
-                            <canvas id="doughChart2" width="120" height="120"></canvas>
-                        </div>
-                        <div class="manage-content">
-                            <div class="h">
-                                <a href="#">二级会员</a>
-                            </div>
-                            <div class="title">
-                                <span>当前</span>
-                            </div>
-                             <div class="title">
-                                <span>共计</span>
-                            </div>
-                            <div class="num">
-                                <a href="#">5人</a>
-                            </div>
-                            <div class="num">
-                                <a href="#">20人</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- manage-section-wrap -->
-                <div class="manage-section-wrap">
-                    <div class="manage-section">
-                        <div class="manage-head">
-                            <canvas id="doughChart3" width="120" height="120"></canvas>
-                        </div>
-                        <div class="manage-content">
-                            <div class="h">
-                                <a href="#">三级会员</a>
-                            </div>
-                            <div class="title">
-                                <span>当前</span>
-                            </div>
-                             <div class="title">
-                                <span>共计</span>
-                            </div>
-                            <div class="num">
-                                <a href="#">5人</a>
-                            </div>
-                            <div class="num">
-                                <a href="#">20人</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- manage-section-wrap -->
-            </div><!--  manage-container end -->
-            <div class="manage-container">
-                 <div class="manage-table-wrap">
-                     <div class="manage-table-section">
-                        <table class="table  manage-table" id="manage-table">
-                            <thead>
-                                <tr>
-                                    <td>编号</td>
-                                    <td>成员姓名</td>
-                                    <td>联系方式</td>
-                                    <td>地区</td>
-                                    <td>累计分成</td>
-                                    <td>成员数量</td>
-                                </tr>
-                            </thead>
-                            <tbody> 
-                                <tr class="grand-parent"  >
-                                    <td>2</td>
-                                    <td>一级</td>
-                                    <td>12345678944</td>
-                                    <td>aasdfsfea</td>
-                                    <td>150元</td>
-                                    <td>10人</td>
-                                </tr>
-                            </tbody>
-                        </table>                 
-                    </div>    
-                 </div>
+            <div class="content-head">
+                <span>提现管理</span>
             </div>
-           
-
+            <div class="manage-container">
+                <div class="manage-section-wrap2">
+                    <div class="manage-section">
+                        <div class="manage-head">
+                            <img src="images/manage3_1.png" alt="">
+                        </div>
+                        <div class="section-content-wrap">  
+                            <div class="section-content">
+                                <div class="manage-name f20 mb5">
+                                    <span>当前可提金额：</span>
+                                    <a href="">1234.00 <span>元</span></a>
+                                </div>
+                                <div class="manage-intro mb5">
+                                    <span>最近一次交易时间 ： 2016/02/24</span>
+                                </div>
+                                <div class="manage-icon mb5">
+                                    <a href="#">提现</a> | <a href="#">提现明细</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="manage-section-wrap2">
+                    <div class="manage-section">
+                        <div class="manage-head">
+                            <img src="images/manage3_2.png" alt="">
+                        </div>
+                        <div class="section-content-wrap">  
+                            <div class="section-content">
+                                <div class="manage-name2 f20 mb5">
+                                    <span>我要提现</span>
+                                    <a href="" class="btn btn-warning">提现</a>
+                                </div>
+                                <div class="manage-intro mb5">
+                                    <span>最近一次提现 ： 2016/02/24</span>
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- manage-section-wrap2 end -->
+            </div><!-- manage-container end -->
+            <div class="manage-container" >
+                <div class="manage-table-wrap">
+                    <div class="manage-table-section">
+                    <table class="table table-hover manage-table" id="manage2-table">
+                    <thead>
+                        <tr>
+                            <td>编号</td>
+                            <td>时间</td>
+                            <td>分成金额</td>
+                            <td>来源</td>
+                            <td>累计金额数</td>
+                            <td>状态</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2016/02/01</td>
+                            <td>100</td>
+                            <td>一级成员-www</td>
+                            <td>1205.00元</td>
+                            <td>到账成功</td>
+                        </tr>
+                         <tr>
+                            <td>1</td>
+                            <td>2016/02/01</td>
+                            <td>200</td>
+                            <td>一级成员-www</td>
+                            <td>1205.00元</td>
+                            <td>到账成功</td>
+                        </tr>
+                         <tr>
+                            <td>1</td>
+                            <td>2016/02/01</td>
+                            <td>200</td>
+                            <td>一级成员-www</td>
+                            <td>1205.00元</td>
+                            <td>到账成功</td>
+                        </tr>
+                         
+                    </tbody>
+                </table>
+                    </div>
+                </div>
+               
+            </div>
         </div> <!-- content end -->
 
 
-    </div>
+    </div><!--  main-container -->
 </body>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
