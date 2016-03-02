@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" href="css/console1412.css"> -->
 </head>
 
 <body>
     <div class="topbar">
         <div class="topbar-left">
-            <a href="##" class="topbar-logo"></a>
-            <a href="##" class="topbar-btn">管理控制台</a>
+            <a href="##" class="topbar-logo">
+                会员管理系统
+            </a>
+          <!--   <a href="##" class="topbar-btn">管理控制台</a> -->
         </div>
-        <div class="dropdown  topbar-left">
+        <!-- <div class="dropdown  topbar-left">
             <a href="#" class="dropdown-toggle topbar-btn" data-toggle="dropdown">1231
 	        <span class="icon-caret-down"></span></a>
             <ul class="dropdown-menu">
@@ -26,7 +27,7 @@
                 <li><a href="#">Something else here</a></li>
                 <li><a href="#">Separated link</a></li>
             </ul>
-        </div>
+        </div> -->
         <div class="topbar-right">
             <div class="dropdown topbar-right">
                 <a href="#" class="dropdown-toggle topbar-btn" data-toggle="dropdown">1615161@qq.com
@@ -35,7 +36,19 @@
                     <li><a href="#">退出</a></li>
                 </ul>
             </div>
-            <a href="#" class="topbar-btn topbar-right"><span class="icon-comment icon-large"></span> <span class="badge">42</span></a>
+            <a href="#" class="topbar-btn topbar-right notice"><span class="icon-comment icon-large"></span> <span class="badge">42</span></a>
+            <div class="topbar-notice-panel">
+                <div class="topbar-notice-arrow"></div>
+                <div class="topbar-notice-head">
+                    <span>站内消息通知</span>
+                </div>
+                <div class="topbar-notice-body">
+                    <span>暂无消息</span>
+                </div>
+                <div class="topbar-notice-foot">
+                    <a href="#">查看更多</a>
+                </div>
+            </div>
             <div class="topbar-right topbar-search">
                 <a href="#" class="topbar-btn topbar-right"><span class="icon-search"></span> 搜索</a>
             </div>
@@ -51,28 +64,27 @@
         </div>
     </div>
     <!-- topbar  end-->
-    <!-- <div class="clearfix"></div> -->
     <div class="main-contain">
         <div class="sidebar">
             <div class="sidebar-nav">
                 <div class="sidebar-fold"><span class="icon-align-justify"></span></div>
                 <ul class="mainmenu">
-                    <li class="menu1"><span class=" icon  icon-caret-right" data-toggle="tooltip" data-placement="right" title="aaaaaaaa"></span><a href="#">AAAAAAAAAA</a>
-                        <a href="#" class="sidebar-icon icon-cog" data-toggle="tooltip" data-placement="right" title="这里是提示的内容"></a>
+                    <li class="menu1"><a href="index.html"><span class=" icon_nav  icon_nav1" data-toggle="tooltip" data-placement="right" title="首页"></span>首页</a>
+                      <!--   <a href="#" class="sidebar-icon icon-cog" data-toggle="tooltip" data-placement="right" title="这里是提示的内容"></a> -->
                     </li>
+                    <li class="menu1"><a href="member-manage.html"><span class=" icon_nav  icon_nav2"  data-toggle="tooltip" data-placement="right" title="成员管理"></span>成员管理</a></li>
+                   
+                    <li class="menu1"><a href="manage2.html"><span class=" icon_nav  icon_nav3" data-toggle="tooltip" data-placement="right" title="分成管理"></span>分成管理</a></li>
+                    <li class="menu1"><a href="manage3.html"><span class=" icon_nav  icon_nav4"  data-toggle="tooltip" data-placement="right" title="提现管理"></span>提现管理</a></li>
+                    <li class="menu1"><a href="public.html"><span class=" icon_nav  icon_nav5"  data-toggle="tooltip" data-placement="right" title="会员公告"></span>会员公告</a></li>
+                  <!-- 二级菜单案例 -->
+                   <!--  <li class="menu1"><span class=" icon  icon-caret-right"></span><a href="#">提现</a></li>
                     <ul class="submenu">
-                        <li><span class=" icon icon-suitcase" data-toggle="tooltip" data-placement="right" title="这里是提示的内容"></span><a href="#">111111</a></li>
-                        <li><span class=" icon icon-suitcase"></span><a href="#">111111</a></li>
-                        <li><span class=" icon icon-suitcase"></span><a href="#">111111</a></li>
-                        <li><span class=" icon icon-suitcase"></span><a href="#">111111</a></li>
-                    </ul>
-                    <li class="menu1"><span class=" icon  icon-caret-right"></span><a href="#">BBBBBBBBBB</a></li>
-                    <ul class="submenu">
                         <li><span class="icon icon-bookmark"></span><a href="#">2222222</a></li>
                         <li><span class="icon icon-bookmark"></span><a href="#">2222222</a></li>
                         <li><span class="icon icon-bookmark"></span><a href="#">2222222</a></li>
                         <li><span class="icon icon-bookmark"></span><a href="#">2222222</a></li>
-                    </ul>
+                    </ul> -->
                 </ul>
             </div>
         </div>
@@ -106,18 +118,18 @@
 	        	<div class="user-section-wrap ">
 	        		<div class="user-section">
 	        			<div class="section-head">
-	        				<img src="images/user.png" alt="" >
+	        				<img src="images/money.png" alt="" >
 	        			</div>
 	        			<div class="section-content-wrap">
 	        				<div class="section-content">
-	        					<div class="user-money f20 mb3">
+	        					<div class="user-money f20 mb5">
 	        						<span>返利余额</span>
 	        						<a href="">1000.00</a>元
 	        					</div>
-	        					<div class="user-intro mb3">
+	        					<div class="user-intro mb5">
 	        						<span>累计返利：1324567988</span>
 	        					</div>
-	        					<div class="user-money-btn mb3">
+	        					<div class="user-money-btn mb5">
 	        						<a href="#">提现</a> | <a href="#">收支明细</a>
 	        					</div>
 	        				</div>
@@ -127,18 +139,21 @@
 	        	<div class="user-section-wrap ">
 	        		<div class="user-section">
 	        			<div class="section-head">
-	        				<img src="images/user.png" alt="" >
+	        				<img src="images/p.png" alt="" >
 	        			</div>
 	        			<div class="section-content-wrap">
 	        				<div class="section-content">
-	        					<div class="user-name f20 mb3">
+	        					<div class="user-name f20 mb5">
 	        						<span>我的推荐码：</span>
 	        						<a href="">555555</a>
 	        					</div>
-	        					<div class="user-intro mb3">
-	        						<span>分享到：</span>
+	        					<div class="user-intro mb5">
+	        						<span>分享到：<a href="#" class="share_icon share_icon1" data-toggle="tooltip" data-placement="top" title="分享到微博"></a>
+                                    <a href="#" class="share_icon share_icon2"data-toggle="tooltip" data-placement="top" title="分享到微信"></a>
+                                    <a href="#" class="share_icon share_icon3"data-toggle="tooltip" data-placement="top" title="分享到QQ"></a>
+                                    <a href="#" class="share_icon share_icon4"data-toggle="tooltip" data-placement="top" title="分享到QQ空间"></a></span>
 	        					</div>
-	        					<div class="user-money-btn mb3">
+	        					<div class="user-money-btn mb5">
 	        						<span>已邀请：20人</span>
 	        					</div>
 	        				</div>

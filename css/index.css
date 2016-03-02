@@ -11,7 +11,8 @@ body{
 .topbar{
 	width: 100%;
 	height: 50px;
-	background-color: #0099cc;
+	/*background-color: #0099cc;*/
+	background-color: #4e82bc;
 	min-width: 800px;
 	position: fixed;
 	top:0;
@@ -22,9 +23,12 @@ body{
 }
 .topbar-left a.topbar-logo{
 	display: block;
-	background-color: #0087b4;
-	width: 50px;
+	background-color: #4276b4;
+	width: 180px;
 	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: #fff;
 	float: left;
 }
 .topbar a{
@@ -35,11 +39,11 @@ body{
 	color: #fff;
 	display:inline-block;
 	padding:0 15px;
-	border-left:1px solid #0087b4;
+	border-left:1px solid #4276b4;
 	transition: 0.2s;
 }
 .topbar a.topbar-btn:hover{
-	background-color:#0087b4;
+	background-color:#4276b4;
 }
 .topbar .dropdown-menu{
 	margin:0;
@@ -92,7 +96,7 @@ body{
 }
 .topbar-right span.badge{
 	color: #00ace9;
-	background-color: #0087b4;
+	background-color: #4276b4;
 }
 .topbar-share{
 	position: relative;
@@ -118,7 +122,7 @@ body{
 	height: 38px;
 	position: absolute;
 	top:50px;
-	border: 2px solid #008fbf;
+	border: 2px solid #4276b4;
 	background: #fff;
 	margin-left: 100px;
 	display: none;
@@ -146,7 +150,49 @@ body{
 	color: #546478;
 	font-size: 12px;
 }
-
+.topbar-notice-panel{
+	position: absolute;
+    top: 50px;
+    width: 440px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.175);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.175);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.175);
+    display: none;
+}
+.topbar-notice-arrow{
+    background: url(../images/notice-arrow.png) 0 0 no-repeat;
+    width: 11px;
+    height: 6px;
+    position: absolute;
+    top: -6px;
+    left: 220px;
+}
+.topbar-notice-head{
+	height: 50px;
+    background-color: #eaedf1;
+    padding: 0 15px;
+    line-height: 50px;
+    color: #333;
+    font-size: 14px;
+}
+.topbar-notice-body{
+	height: 300px;
+    overflow-y: auto;
+    background: #fff;
+    font-size: 12px;
+}
+.topbar-notice-body span{
+	text-align: center;
+	margin-top: 80px;
+	display: block;
+}
+.topbar-notice-foot{
+	height: 50px;
+    line-height: 50px;
+    background: #fff;
+    text-align: center;
+}
 /*-----------------------------------------sidebar-------------------------*/
 .main-contain{
 	margin-top: 65px;
@@ -158,7 +204,7 @@ body{
     margin-top: 50px;
 	position: fixed;
 	top:0;
-
+	width: 120px;
 }
 .sidebar-nav{
 	width: 180px;
@@ -170,6 +216,7 @@ body{
 	text-decoration: none;
 	color: #fff;
 	font-size: 14px;
+	display: block;
 }
 .sidebar-fold{
 	height: 30px;
@@ -191,11 +238,13 @@ ul.mainmenu li.menu1 span{
 span.icon{
 	padding:0 20px;
 	color: #fff;
-
 }
 ul.mainmenu li{
 	cursor: pointer;
 	overflow: hidden;
+}
+ul.mainmenu li.open{
+	background-color: #345382;
 }
 ul.mainmenu{
 	margin-bottom: 0;
@@ -213,21 +262,45 @@ ul.submenu li{
 	height: 40px;
 	line-height: 40px;
 }
+
 ul.submenu li:hover{
 	background-color: #37424f;
 }
-ul.mainmenu li.menu1.open span{
+/*侧边二级菜单的箭头旋转*/
+/*ul.mainmenu li.menu1.open span{
 	transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
-}
+}*/
 .sidebar-icon{
 	margin-left: 20px;
 }
-
-
+span.icon_nav{
+	width: 20px;
+	height: 20px;
+    float: left;
+    margin:10px 10px 10px 15px;
+}
+.icon_nav1{
+	background: url(../images/nav_icon.png) no-repeat ;
+}
+.icon_nav2{
+	background: url(../images/nav_icon.png) no-repeat -25px 0;
+}
+.icon_nav3{
+	background: url(../images/nav_icon.png) no-repeat -78px 0;
+}
+.icon_nav4{
+	background: url(../images/nav_icon.png) no-repeat -48px 0;
+}
+.icon_nav5{
+	background: url(../images/nav_icon.png) no-repeat -100px 0;
+}
+.icon_nav6{
+	background: url(../images/nav_icon.png) no-repeat -120px 0;
+}
 /*--------------------------------content-----------------------*/
 .content{
 	margin-left: 180px;
@@ -290,6 +363,23 @@ ul.mainmenu li.menu1.open span{
 }
 .user-money a{
 	color: #f7c260;
+}
+a.share_icon{
+	width: 20px;
+	height: 14px;
+	display: inline-block;
+}
+.share_icon1{
+	background: url(../images/share_icon.png);
+}
+.share_icon2{
+	background: url(../images/share_icon.png) -26px 0;
+}
+.share_icon3{
+	background: url(../images/share_icon.png)-48px 0;
+}
+.share_icon4{
+	background: url(../images/share_icon.png)-71px 0;
 }
 .mb5{
 	margin-bottom: 5px;
